@@ -1,0 +1,30 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      APLICATIVO BUNITÃO DE ESCOLHINHAS
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content ion-row padding center text-center>
+  <ion-row >
+    <ion-col size-sm="12" size-lg="4" size-md="6" offsetMd="3" offsetLg="4" align-self-center class="formulario-login">
+        <ion-card>
+          <ion-card-content>
+            <!-- <ion-title>btata</ion-title> -->
+            <ion-list>
+              <ion-item>
+                <ion-input [(ngModel)]="usuario" placeholder="Usuário"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input [(ngModel)]="senha" placeholder="Senha" type="password"></ion-input>
+              </ion-item>
+            </ion-list>
+            <ion-button (click)="efetuarLogin()" expand="block">login</ion-button>
+            <ion-button expand="block" color="secondary" routerLink="/register"
+              routerDirection="forward">cadastro</ion-button>
+          </ion-card-content>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

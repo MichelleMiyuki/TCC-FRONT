@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title center text-center> Página de cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-input
+        placeholder="entre com seu nome completo"
+        [(ngModel)]="nome"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>CPF</ion-label>
+      <ion-input
+        placeholder="entre com os números de seu CPF"
+        [(ngModel)]="cpf"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Endereço</ion-label>
+      <ion-input
+        placeholder="endereço completo"
+        [(ngModel)]="endereco"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Estado</ion-label>
+      <ion-input
+        placeholder="sigla do estado"
+        [(ngModel)]="estado"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Telefone</ion-label>
+      <ion-input
+        placeholder="(XXX) X XXXX-XXXX"
+        [(ngModel)]="telefone"
+      ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input placeholder="Email" [(ngModel)]="email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Senha</ion-label>
+      <ion-input [(ngModel)]="senha" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Confirmar Senha</ion-label>
+      <ion-input [(ngModel)]="confirmarSenha" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button full (click)="efetuarCadastro()" expand="block">CADASTRAR</ion-button>
+</ion-content>
